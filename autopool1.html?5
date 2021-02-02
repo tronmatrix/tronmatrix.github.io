@@ -2,8 +2,8 @@
 <html>
 	<head>
         <meta charset="utf-8">        
-        <meta name="author">
-        <meta name="description">
+        <meta name="author" content="Tronmatrix">
+        <meta name="description" content="Tronmatrix">
         
         <!-- Mobile Stuff -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +11,14 @@
         <meta name="msapplication-tap-highlight" content="no">
         
         <!-- Chrome on Android -->
-        <meta name="mobile-web-app-capable" content="no">
-        <meta name="application-name">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Tronmatrix">
         <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon.png">
         
         <!-- Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="no">
-        <meta name="apple-mobile-web-app-status-bar-style">
-        <meta name="apple-mobile-web-app-title">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Tronmatrix">
         <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
         
         <!-- Windows 8 -->
@@ -36,7 +36,7 @@
         <link rel="shortcut icon" href="images/ico.png" type="image/png">
     </head>
 
-    <body>  
+    <body> 
         <div id="loader">
           <div class='cssload-loader'>
               <div class='cssload-inner cssload-one'></div>
@@ -62,7 +62,7 @@
                         <nav class="main-menu">
                             <ul>
                                 <li><a href="./auccount.html">Dashboard</a></li>
-                                <li><a href="./autopool.html">AUTOPOOL</a></li>
+                                <li><a href="./autopool.html">AutoPool</a></li>
                                 <li><a href="./transactionash.html">Transactions</a></li>
                                 <li><a id="logout">Logout</a></li>
                             </ul>
@@ -71,34 +71,21 @@
                 </header>
             </div>
             <div class="content container clearfix">
-                <h1>Transactions</h1>
-                <div class="tab">
-                    <ul>
-                        <li><a href="#Referral">Referral</a></li>
-                        <li><a href="#Pool-Payments">AutoPool-Payments</a></li>
-                    </ul>
-                    <div class="table AutoPool-table even">
-                        <div id="Referral">
-                            <table class="text-left">
-                                <tr>
-                                    <th>Transactions</th>
-                                    <th>From address</th>
-                                    <!-- <th>Level</th> -->
-                                    <th>Amount</th>
-                                </tr>
-                            </table>
-                        </div>
-                        <div id="Pool-Payments">
-                            <table class="text-left">
-                                <tr>
-                                    <th>Transactions</th>
-                                    <th>From address</th>
-                                    <th>AUTOPOOL NO.</th>
-                                    <th>Amount</th>
-                                </tr>
-                            </table>
-                        </div>
+                <h1>AUTOPOOL</h1>
+                <div class="table AutoPool-table even">
+                    <div class="AutoPool-table-nav">
+                        <span>AutoPool</span>
+                        <a href="autopool.html">Back</a>
                     </div>
+                    <table>
+                        <tr>
+                            <th>AutoPool No</th>
+                            <th>TRX address</th>
+                            <th>AutoPool sequence No.</th>
+                            <th>Payment reseived</th>
+                            <th>User ID</th>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -113,7 +100,7 @@
                 </div>
                 <div class="copyright">Copyright © 2020-2021 All Rights Reserved.</div>
             </div>
-        </footer> 
+        </footer>
         <script src="js/jquery-1.12.4.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/script.js"></script>
