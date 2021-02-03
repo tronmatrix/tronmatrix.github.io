@@ -2316,7 +2316,7 @@ table.text-left tr th:first-child{
     .my-team-content{
         padding: 15px 0 20px 20px;
     }
-=======
+
 @font-face {
     font-family: 'VarelaRound';
     src: local('Varela Round'), local('VarelaRound-Regular'), url('') format('woff2'), url('') format('woff'), url('') format('truetype');
