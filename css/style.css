@@ -832,7 +832,7 @@ table tr th{
     top: 69px;
     right: 96px;
 }
-.faq{}
+
 .faq-title{
     font-size: 45px;
     line-height: 86px;
@@ -875,8 +875,7 @@ table tr th{
     right: 9px;
     margin: -10px 0 0 0;
 }
-.faq-block-top.active{
-}
+
 .faq-block-top.active:before{
     display: none;
 }
@@ -996,7 +995,7 @@ footer{
     color: #fff;
     margin: 0 0 31px 0;
 }
-.login-form{}
+
 .login-form input{
     width: 551px;
     box-sizing: border-box;
@@ -1142,7 +1141,7 @@ marquee{
     font-family: 'GilroyExtraBold';
     font-size: 26px;
 }
-.product-description{}
+
 .product-description span{
     display: block;
     text-align: center;
@@ -1355,9 +1354,7 @@ table.text-left tr th:first-child{
         right: -175px;
         z-index: -1;
     }
-    .main div.city img{
-        /*height: 1040px;*/
-    }
+    
     .statistics-block{
         flex-basis: 23%;
     }
@@ -1469,12 +1466,8 @@ table.text-left tr th:first-child{
     .referral-income{
         margin: 100px 0 0 0;
     }
-    .auccount-users{
-/*        padding: 10px 0;*/
-    }
-    .auccount-user{
-/*        margin: 0 5%;*/
-    }
+    
+    
     .earning-block{
         flex-basis: 32%;
     }
@@ -1634,8 +1627,7 @@ table.text-left tr th:first-child{
     .cube5{
         bottom: -110px;
     }
-    footer .container{
-    }
+    
     footer .container:after{
         display: none;
     }
@@ -2777,10 +2769,7 @@ table tr td{
     color: #fff;
     padding: 19px 0;
 }
-table tr:nth-child(odd) td,
-table tr th{
-    /*background: #1B2076;*/
-}
+
 .even table tr:nth-child(even) td{
     background: #1B2076;
 }
@@ -2974,7 +2963,7 @@ table tr th{
     top: 69px;
     right: 50px;
 }
-.faq{}
+
 .faq-title{
     font-size: 72px;
     line-height: 86px;
@@ -3017,8 +3006,7 @@ table tr th{
     right: 9px;
     margin: -10px 0 0 0;
 }
-.faq-block-top.active{
-}
+
 .faq-block-top.active:before{
     display: none;
 }
@@ -3135,7 +3123,7 @@ footer{
     color: #fff;
     margin: 0 0 31px 0;
 }
-.login-form{}
+
 .login-form input{
     width: 551px;
     box-sizing: border-box;
@@ -3144,9 +3132,7 @@ footer{
 .login-form button{
     min-width: 176px;
 }
-.login-form button:nth-of-type(1){
-    /*background: #009DF5;*/
-}
+
 .login-form button:nth-of-type(1):hover{
     background: none;
 }
@@ -3251,7 +3237,7 @@ footer{
     font-family: 'GilroyExtraBold';
     font-size: 26px;
 }
-.product-description{}
+
 .product-description span{
     display: block;
     text-align: center;
@@ -3706,8 +3692,7 @@ table.text-left tr th:first-child{
     .cube5{
         bottom: -110px;
     }
-    footer .container{
-    }
+    
     footer .container:after{
         display: none;
     }
@@ -4381,4 +4366,4 @@ table.text-left tr th:first-child{
     .my-team-content{
         padding: 15px 0 20px 20px;
     }
-}
+}}
