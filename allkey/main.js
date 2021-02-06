@@ -34,14 +34,14 @@ AboutComponent.ɵfac = function AboutComponent_Factory(t) { return new (t || Abo
 AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AboutComponent, selectors: [["app-about"]], decls: 3, vars: 0, consts: [["href", "https://github.com/mingfunwong/all-bitcoin-private-key"]], template: function AboutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, "Github: ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "https://github.com/mingfunwong/all-bitcoin-private-key");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " https://www.blockchain.com/btc/address/bc1qv6qvl3ycrrr6p6rnmu4qlz7q687ve9ht9hhs6k ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhYm91dC5jb21wb25lbnQuc2NzcyJ9 */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AboutComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
                 selector: 'app-about',
-                templateUrl: './about.component.html',
+                templateUrl: './donate.component.html',
                 styleUrls: ['./about.component.scss']
             }]
     }], function () { return []; }, null); })();
