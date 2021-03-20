@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="All ethereum private keys spread out over pages of 128 wallets each. Any random page could contain an ethereum address with a balance.">
+    <meta name="author" content="PrivateKeys">
+    <meta name="keywords" content="ethereum, eth, page, private key, public key, database, wallet, leaked" />
+    
+    <meta property="og:title" content="All Ethereum private keys | PrivateKeys" />
+    <meta property="og:site_name" content="PrivateKeys" />
+    <meta property="og:description" content="All ethereum private keys spread out over pages of 128 wallets each. Any random page could contain an ethereum address with a balance." />
+    <meta property="og:url" content="https://privatekeys.space/ethereum" />
+    <meta property="og:image" content="https://privatekeys.space/css/logos/logo.png" />
+    
+    <link rel="canonical" href="https://privatekeys.space/ethereum" />
+
+    <title>All Ethereum private keys | PrivateKeys</title>
+    <link rel="icon" type="https://privatekeys.space/image/png" href="https://privatekeys.space/css/logos/lock.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://privatekeys.space/css/vendor/bootstrap/css/all.css" rel="https://privatekeys.space/stylesheet"> <!--load all styles -->
+    <link href="https://privatekeys.space/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://privatekeys.space/css/custom/stylesheetEth.css">
+    <link rel="stylesheet" href="https://privatekeys.space/css/custom/lib.css">
+    <link rel="stylesheet" href="https://privatekeys.space/css/navBar.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175922999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-175922999-1');
+    </script>
+    <script src="https://privatekeys.space/js/ads-prebid.js"></script>
+  </head>
+
+  <body class="flex flex-col bg-grey-lightest min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/"><i class="fas fa-dice-d20"></i> PrivateKeys</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="bitcoin">BITCOIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link selectedPage" href="ethereum">ETHEREUM</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  TOOLS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="search">Private Key Search</a>
+                  <a class="dropdown-item" href="brainwallet">Brainwallet Generation</a>
+                  <a class="dropdown-item" href="checkbtc">BTC Address Balance</a>
+                  <a class="dropdown-item" href="checketh">ETH Address Balance</a>
+                </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+
+          <!-- Mobile 320x100 -->
+          <div style="text-align: center;">
+            <div style="display: inline-block;">
+              <span id="ct_cSsZ2Af8dc7"></span>
+            </div>
+          </div>
+          <!-- Desktop 728x90 -->
+          <div style="text-align: center;">
+            <div style="display: inline-block;">
+              <span id="ct_crQQ7ju3z48"></span>
+            </div>
+          </div>
+
+          <!-- Page numbers -->
+          <h1 class="flex flex-col text-base break-words text-center">
+            <span><img src="https://privatekeys.space/css/logos/eth.png" alt="Ethereum pages" style="max-width:100px;height:80px;"></span>
+            <p>Current page: <i id="ethInputPage" class="fa fa-pencil-alt" title="Click this to manually specify a page" aria-hidden="true"></i>  <i id="ethExportKeys" class="fas fa-file-download" title="Click this to export the keys on this page" aria-hidden="true"></i></p><span id="currentEthPage" class="lead"></span>
+            Last page: <span id="lastEthPage" class="lead"></span>
+          </h1>
+
+          <!-- Buttons for pages -->
+          <div class="my-4">
+            <!-- First page -->
+            <div class="flex justify-between items-center max-w-sm mx-auto pr-3">
+              <a title="First page" class="text-black firstEthPageButton" rel="nofollow">
+                <span class="inline-block w-6">
+                  <img src="https://privatekeys.space/css/logos/first.png" alt="First page" style="max-width:50px;height:50px;">
+                </span>
+              </a>
+      
+              <!-- Previous page -->
+              <a title="Previous page" class="text-black previousEthPageButton" rel="nofollow">
+                <span class="inline-block w-4">
+                  <img src="https://privatekeys.space/css/logos/previous.png" alt="Previous page" style="max-width:50px;height:50px;">
+                </span>
+              </a>
+
+              <!-- Random page -->
+              <a title="Random page" class="text-black randomEthPageButton" rel="nofollow">
+                <span class="inline-block w-8">
+                  <img src="https://privatekeys.space/css/logos/randomEth.png" alt="Random page" style="max-width:55px;height:50px;">
+                </span>
+              </a>
+
+              <!-- Next page -->
+              <a title="Next page" class="text-black nextEthPageButton" rel="nofollow">
+                <span class="inline-block w-4">
+                  <img src="https://privatekeys.space/css/logos/next.png" alt="Next page" style="max-width:50px;height:50px;">
+                </span>
+              </a>
+
+              <!-- Last page -->
+              <a title="Last page" class="text-black lastEthPageButton" rel="nofollow">
+                <span class="inline-block w-6">
+                  <img src="https://privatekeys.space/css/logos/last.png" alt="Last page" style="max-width:50px;height:50px;">
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div id="ethInvalidPageNumberFormat" class="alert alert-danger">
+            <strong>Error!</strong> The page number is in the wrong format.
+          </div>
+
+          <div id="ethPageOutOfBoundaries" class="alert alert-danger">
+            <strong>Error!</strong> The page is outside the boundaries.
+          </div>
+
+          <div id="ethApiError" class="alert alert-danger">
+            Etherscan.io API has temporarily blocked your IP address due to too many requests.
+            In the future, please wait for all wallets to be checked before changing the page.
+          </div>
+
+          <!-- Page percent -->
+          <div id="wrapperEthPercent">
+            <div id="ethPoint">
+              <div id="label_wrapperEthPercent" class="tp">
+                <span class="tptext">The point where the following keys are located within the key space</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Private keys -->
+        <div class="wrapper">
+          <div id="ethResults" class="row"></div>
+        </div>
+        
+        <div class="col-lg-12 text-center">
+          <!-- Buttons for pages -->
+          <div class="my-4">
+            <!-- First page -->
+            <div class="flex justify-between items-center max-w-sm mx-auto pr-3">
+              <a title="First page" class="text-black firstEthPageButton" rel="nofollow">
+                <span class="inline-block w-6">
+                  <img src="https://privatekeys.space/css/logos/first.png" alt="First page" style="max-width:50px;height:50px;">
+                </span>
+              </a>
+      
+              <!-- Previous page -->
+              <a title="Previous page" class="text-black previousEthPageButton" rel="nofollow">
+                <span class="inline-block w-4">
+                  <img src="https://privatekeys.space/css/logos/previous.png" alt="Previous page" style="max-width:50px;height:50px;">
+                </span>
+              </a>
+
+              <!-- Random page -->
+              <a title="Random page" class="text-black randomEthPageButton" rel="nofollow">
+                <span class="inline-block w-8">
+                  <img src="https://privatekeys.space/css/logos/randomEth.png" alt="Random page" style="max-width:55px;height:50px;">
+                </span>
+              </a>
+
+              <!-- Next page -->
+              <a title="Next page" class="text-black nextEthPageButton" rel="nofollow">
+                <span class="inline-block w-4">
+                  <img src="https://privatekeys.space/css/logos/next.png" alt="Next page" style="max-width:50px;height:50px;">
+                </span>
+              </a>
+
+              <!-- Last page -->
+              <a title="Last page" class="text-black lastEthPageButton" rel="nofollow">
+                <span class="inline-block w-6">
+                  <img src="https://privatekeys.space/css/logos/last.png" alt="Last page" style="max-width:50px;height:50px;">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Desktop 300x250 -->
+      <div style="text-align: center;">
+        <div style="display: inline-block;">
+          <span id="ct_chl7qQqs9cS"></span>
+        </div>
+      </div>
+      <!-- Mobile 300x250 -->
+      <div style="text-align: center;">
+        <div style="display: inline-block;">
+          <span id="ct_cuh5LeVKAyy"></span>
+        </div>
+      </div>
+      <br><br><br><br>
+
+    </div>
+
+    <!-- Adblock detection -->
+    <div class="modal" id="adBlockerDetected">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Adblock Detected</h4>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>We noticed that you may have an AdBlocker turned on.
+              Please be aware that our site is best experienced with AdBlocker turned off.
+            </p>
+            <p>
+              For immediate access to the site, please disable it and click the green button below.
+            </p>
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" style="background-color: #28a745" id="refreshPage">OK, I've disabled it</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://privatekeys.space/js/env.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://privatekeys.space/js/detectAdblock.js"></script>
+    <script src="https://privatekeys.space/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://privatekeys.space/js/ethereum.js"></script>
+    <script src="https://privatekeys.space/js/ethereumReq.js"></script>
+  </body>
+</html>
